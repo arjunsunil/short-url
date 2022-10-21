@@ -9,7 +9,6 @@ The goal of the project is to implement an HTTP API to support a URL shortner ap
 
 git clone https://github.com/arjunsunil/short-url-api.git
 
-git checkout develop
 
 make sure that docker and python are installed on your system and correctly configured to run this application.
 
@@ -41,7 +40,7 @@ curl --location --request GET 'http://0.0.0.0:8000/shorturl/{pk}'
 
 #### Get the spefic original url from short url
 curl --location --request POST 'http://127.0.0.1:8000/get-original-url/' 
---form 'short_url="{url}"'
+--form 'short_url="{short_url}"'
 
 
 
